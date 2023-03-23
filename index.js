@@ -7,7 +7,7 @@ var output_field = document.getElementsByClassName("output-area")[0]
 boton_encriptar.onclick = () => {
 
     let input_text = input_field.value.trim()
-    
+
     //Validacion del input
     let validador = /^[a-z]+(\s[a-z]+)*$/
     if (!validador.test(input_text)) {
@@ -32,11 +32,11 @@ boton_copiar.onclick = () => {
 
 function encriptar(texto) {
     let salida = texto
-        .replaceAll("e","enter")
-        .replaceAll("i","imes")
-        .replaceAll("a","ai")
-        .replaceAll("o","ober")
-        .replaceAll("u","ufat")
+        .replaceAll("e", "enter")
+        .replaceAll("i", "imes")
+        .replaceAll("a", "ai")
+        .replaceAll("o", "ober")
+        .replaceAll("u", "ufat")
 
 
     return salida
